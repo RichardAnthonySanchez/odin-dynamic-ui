@@ -1,0 +1,19 @@
+{
+  "name": "odin-dynamic-ui",
+  "version": "1.0.0",
+  "description": "Assignment for creating dynamic user interface components. All components should be interactable using Javascript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RichardAnthonySanchez/odin-dynamic-ui.git"
+  },
+  "author": "richard anthony sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RichardAnthonySanchez/odin-dynamic-ui/issues"
+  },
+  "homepage": "https://github.com/RichardAnthonySanchez/odin-dynamic-ui#readme"
+}
