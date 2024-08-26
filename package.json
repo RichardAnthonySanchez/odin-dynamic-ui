@@ -2,10 +2,10 @@
   "name": "odin-dynamic-ui",
   "version": "1.0.0",
   "description": "Assignment for creating dynamic user interface components. All components should be interactable using Javascript.",
-  "main": "index.js",
+  "private": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
