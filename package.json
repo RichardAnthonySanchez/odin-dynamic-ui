@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/RichardAnthonySanchez/odin-dynamic-ui/issues"
   },
-  "homepage": "https://github.com/RichardAnthonySanchez/odin-dynamic-ui#readme"
+  "homepage": "https://github.com/RichardAnthonySanchez/odin-dynamic-ui#readme",
+  "devDependencies": {
+    "webpack": "^5.94.0"
+  }
 }
