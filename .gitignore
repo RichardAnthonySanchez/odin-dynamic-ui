@@ -1,0 +1,34 @@
+# Node modules directory
+node_modules/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Output directories from builds
+dist/
+build/
+
+# Webpack specific
+.cache/
+.webpack/
+
+# Optional npm cache directory
+.npm/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# dotenv environment variables file
+.env
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Test coverage directories
+coverage/
+
+# Ignore yar
