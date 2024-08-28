@@ -19,6 +19,7 @@
   "homepage": "https://github.com/RichardAnthonySanchez/odin-dynamic-ui#readme",
   "devDependencies": {
     "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
     "s": "^1.0.0",
     "style-loader": "^4.0.0",
     "webpack": "^5.94.0"
