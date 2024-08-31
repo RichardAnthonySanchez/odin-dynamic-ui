@@ -2,8 +2,9 @@ import "./style.css";
 
 function component() {
   document.addEventListener("click", function (e) {
-    if (e.target.matches(".menu-trigger")) {
-      const menuOptionsContainer = document.querySelector(".menu-options");
+    if (e.target.matches(".trigger")) {
+      const trigger = e.target;
+      const menuOptionsContainer = trigger.nextElementSibling;
       if (menuOptionsContainer.classList.contains("hidden")) {
         menuOptionsContainer.classList.remove("hidden");
       } else {
