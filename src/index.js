@@ -1,4 +1,5 @@
 import "./style.css";
+import viewPagination from "./pagination/viewPagination";
 
 function component() {
   document.addEventListener("click", function (e) {
@@ -12,6 +13,8 @@ function component() {
       }
     }
   });
+
+  viewPagination();
 }
 
 document.body.appendChild(component());
