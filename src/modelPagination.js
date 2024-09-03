@@ -12,6 +12,7 @@ function modelPagination(state, pages, input) {
       state = state--;
     }
   }
+  return state;
 }
 
 export default modelPagination;
