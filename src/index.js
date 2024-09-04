@@ -13,8 +13,8 @@ function component() {
       }
     }
   });
-
-  viewPagination();
+  const defaultCarouselValue = 1;
+  viewPagination(defaultCarouselValue);
 }
 
 document.body.appendChild(component());
