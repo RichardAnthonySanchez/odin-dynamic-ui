@@ -1,3 +1,15 @@
 .hidden {
   display: none;
 }
+
+.slides-container {
+  width: 1200px;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+}
+
+.img img {
+  width: 25%;
+  height: 80%;
+}
