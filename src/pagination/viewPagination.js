@@ -19,9 +19,39 @@ function viewPagination(state) {
   projectManagerImage.src = ProjectManager;
   taskManagerImage.src = TaskManager;
 
-  positionOneContainer.appendChild(homepageImage);
-  positionTwoContainer.appendChild(projectManagerImage);
-  positionThreeContainer.appendChild(taskManagerImage);
+  if (state === 1) {
+    positionOneContainer.innerHTML = "";
+    positionTwoContainer.innerHTML = "";
+    positionThreeContainer.innerHTML = "";
+
+    positionOneContainer.appendChild(homepageImage);
+    positionTwoContainer.appendChild(projectManagerImage);
+    positionThreeContainer.appendChild(taskManagerImage);
+  } else if (state === 2) {
+    positionOneContainer.innerHTML = "";
+    positionTwoContainer.innerHTML = "";
+    positionThreeContainer.innerHTML = "";
+
+    positionOneContainer.appendChild(taskManagerImage);
+    positionTwoContainer.appendChild(homepageImage);
+    positionThreeContainer.appendChild(projectManagerImage);
+  } else if (state === 0) {
+    positionOneContainer.innerHTML = "";
+    positionTwoContainer.innerHTML = "";
+    positionThreeContainer.innerHTML = "";
+
+    positionOneContainer.appendChild(projectManagerImage);
+    positionTwoContainer.appendChild(taskManagerImage);
+    positionThreeContainer.appendChild(homepageImage);
+  } else {
+    console.error(
+      "there is a problem reading state. resetting to default values"
+    );
+
+    positionOneContainer.appendChild(homepageImage);
+    positionTwoContainer.appendChild(projectManagerImage);
+    positionThreeContainer.appendChild(taskManagerImage);
+  }
 
   controllerPagination(state, pages);
 }
