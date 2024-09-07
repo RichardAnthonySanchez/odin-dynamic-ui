@@ -7,6 +7,10 @@ import TaskManager from "../img/img-todoslist-taskmanager.png";
 function viewPagination(state) {
   let pages = [0, 1, 2];
 
+  const nav1 = document.getElementById("nav1");
+  const nav2 = document.getElementById("nav2");
+  const nav3 = document.getElementById("nav3");
+
   const positionOneContainer = document.querySelector(".position-one");
   const positionTwoContainer = document.querySelector(".position-two");
   const positionThreeContainer = document.querySelector(".position-three");
@@ -27,6 +31,10 @@ function viewPagination(state) {
     positionOneContainer.appendChild(homepageImage);
     positionTwoContainer.appendChild(projectManagerImage);
     positionThreeContainer.appendChild(taskManagerImage);
+
+    nav1.checked = false;
+    nav2.checked = true;
+    nav3.checked = false;
   } else if (state === 2) {
     positionOneContainer.innerHTML = "";
     positionTwoContainer.innerHTML = "";
@@ -35,6 +43,10 @@ function viewPagination(state) {
     positionOneContainer.appendChild(taskManagerImage);
     positionTwoContainer.appendChild(homepageImage);
     positionThreeContainer.appendChild(projectManagerImage);
+
+    nav1.checked = false;
+    nav2.checked = false;
+    nav3.checked = true;
   } else if (state === 0) {
     positionOneContainer.innerHTML = "";
     positionTwoContainer.innerHTML = "";
@@ -43,6 +55,10 @@ function viewPagination(state) {
     positionOneContainer.appendChild(projectManagerImage);
     positionTwoContainer.appendChild(taskManagerImage);
     positionThreeContainer.appendChild(homepageImage);
+
+    nav1.checked = true;
+    nav2.checked = false;
+    nav3.checked = false;
   } else {
     console.error(
       "there is a problem reading state. resetting to default values"
@@ -51,6 +67,10 @@ function viewPagination(state) {
     positionOneContainer.appendChild(homepageImage);
     positionTwoContainer.appendChild(projectManagerImage);
     positionThreeContainer.appendChild(taskManagerImage);
+
+    nav1.checked = false;
+    nav2.checked = true;
+    nav3.checked = false;
   }
 
   controllerPagination(state, pages);
