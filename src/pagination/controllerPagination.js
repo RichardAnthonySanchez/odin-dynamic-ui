@@ -1,4 +1,5 @@
 import modelPagination from "./modelPagination";
+import viewPagination from "./viewPagination";
 
 function controllerPagination(state, pages) {
   document.addEventListener("click", function (e) {
@@ -8,6 +9,7 @@ function controllerPagination(state, pages) {
       state = modelPagination(state, pages, "left");
     }
     console.log("state has been updated to " + state);
+    viewPagination(state);
     return state;
   });
 }
