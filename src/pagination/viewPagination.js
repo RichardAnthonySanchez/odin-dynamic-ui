@@ -1,10 +1,11 @@
-import controllerPagination from "./controllerPagination";
+import { controllerPagination, autoAdvance } from "./controllerPagination";
 
 import Homepage from "../img/img-todoslist-homepage.png";
 import ProjectManager from "../img/img-todoslist-projectmanager.png";
 import TaskManager from "../img/img-todoslist-taskmanager.png";
 
 function viewPagination(state) {
+  let viewAutoAdvance;
   let pages = [0, 1, 2];
 
   const nav1 = document.getElementById("nav1");
@@ -74,5 +75,10 @@ function viewPagination(state) {
   }
 
   controllerPagination(state, pages);
+
+  // set interval, in this case, changes state in unexpected ways over time
+  // likely due to circular dependecy (controller to view and view to controller)
+  // also we aren't storing and overriding the state, we've been making dupes (unrealiable if multiple methods are changing state)
+  //setInterval(() => autoAdvance(state, pages), 5000);
 }
 export default viewPagination;

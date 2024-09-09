@@ -1,5 +1,6 @@
 import "./style.css";
 import viewPagination from "./pagination/viewPagination";
+import { autoAdvance } from "./pagination/controllerPagination";
 
 function component() {
   document.addEventListener("click", function (e) {

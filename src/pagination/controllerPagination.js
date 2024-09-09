@@ -1,7 +1,7 @@
 import modelPagination from "./modelPagination";
 import viewPagination from "./viewPagination";
 
-function controllerPagination(state, pages) {
+export function controllerPagination(state, pages) {
   document.addEventListener("click", function (e) {
     if (e.target.matches(".carousel-right")) {
       state = modelPagination(state, pages, "right");
@@ -20,4 +20,7 @@ function controllerPagination(state, pages) {
   });
 }
 
-export default controllerPagination;
+export function autoAdvance(state, pages) {
+  state = modelPagination(state, pages, "right");
+  viewPagination(state);
+}
